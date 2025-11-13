@@ -1,2 +1,2 @@
 //https://github.com/felipesfarina/cadastro-fornecedor.git
-//https://cadastro-fornecedor-six.vercel.app
+//https://cadastro-fornecedor-git-main-felipesfarinas-projects.vercel.app
