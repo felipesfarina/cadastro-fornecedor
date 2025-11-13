@@ -1,0 +1,16 @@
+{
+  "name": "formulario-fornecedor",
+  "version": "1.0.0",
+  "description": "Sistema de formulario fornecedor - Atividade 3 PPI",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": ["express", "formulario", "ppi"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Fornecedor</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/cadastrar-fornecedor">Cadastrar Fornecedor</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h1>Cadastro de Fornecedor</h1>
+        <p class="descricao">Preencha todos os campos obrigatórios para cadastrar um novo fornecedor.</p>
+        
+        <form action="/cadastrar-fornecedor" method="POST" class="formulario">
+            <div class="form-group">
+                <label for="cnpj">CNPJ: *</label>
+                <input type="text" id="cnpj" name="cnpj" placeholder="00.000.000/0000-00" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="razaoSocial">Razão Social: *</label>
+                <input type="text" id="razaoSocial" name="razaoSocial" placeholder="Ex: Alimentos Ltda" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="nomeFantasia">Nome Fantasia: *</label>
+                <input type="text" id="nomeFantasia" name="nomeFantasia" placeholder="Ex: Loja do Mecânico" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="endereco">Endereço: *</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Rua, número, complemento" required>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="cidade">Cidade: *</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Ex: Três Passos" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="uf">UF: *</label>
+                    <select id="uf" name="uf" required>
+                        <option value="">Selecione...</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="cep">CEP: *</label>
+                    <input type="text" id="cep" name="cep" placeholder="00000-000" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email: *</label>
+                <input type="email" id="email" name="email" placeholder="email@exemplo.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="telefone">Telefone: *</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+            </div>
+            
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Cadastrar Fornecedor</button>
+                <a href="/" class="btn btn-secondary">Cancelar</a>
+            </div>
+        </form>
+        
+        <p class="obs">Todos os campos são obrigatórios !!</p>
+    </div>
+</body>
+</html>
